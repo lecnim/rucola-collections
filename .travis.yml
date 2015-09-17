@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.2"
+  - "3.3"
+  - "3.4"
+  - "nightly"
+install:
+  - pip install git+git://github.com/lecnim/rucola.git@master
+  - pip install .
+script: nosetests
